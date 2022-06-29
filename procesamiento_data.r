@@ -49,10 +49,10 @@ df_sum_gen<- filter(df_general, tipo_encuesta == 'visitasvivir' & sector=='Resid
 
 summary(df_general)
 
-
+#### temporal
 
 df_general%>%
-  gro
+  group_by()
   
   ggplot( aes(x=fecha, y=value)) +
   geom_line( color="grey") +
